@@ -2,12 +2,15 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>UserInfo Page</title>
+<title>ProgrammerInfo Page</title>
 </head>
 <body>
-<h1>UserInfo Page</h1>
-<h3 th:text="${name}"></h3>
-<h3 th:text="${phone}"></h3>
-<h3 th:text="${email}"></h3>
+
+	<h1>UserInfo Page</h1>
+
+	<h3 th:text="${user.id}"></h3>
+	<h3 th:text="${user.name}"></h3>
+	<h3 th:text="${user.phone}"></h3>
+	<h3 th:text="${user}"></h3>
 </body>
 </html>

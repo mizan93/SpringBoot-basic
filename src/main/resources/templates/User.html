@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
 <meta charset="ISO-8859-1">
 <title>User page</title>
 </head>
 <body>
-<h1>User Data</h1>
-<form action="addUser">
-<h3>Enter name</h3>
-<input type="text" name="name"/>
-<h3>Enter phone</h3>
-<input type="text" name="phone"/>
-<h3>Enter email</h3>
-<input type="text" name="email"/>
-<button type="submit">Add user</button>
-</form>
+	<h1>User Data</h1>
+
+	<h1>----Add User----</h1>
+	<form action="addUser" method="post">
+
+		<h3>Enter User Name</h3>
+		<input type="text" name="name" />
+		<h3>Enter user phone</h3>
+		<input type="text" name="phone" />
+		<button type="submit">Add Programmer</button>
+	</form>
+	<hr>
+
+	<h1>----Find User By ID----</h1>
+	<form action="findById" method="post">
+		<h3>Enter User ID to find</h3>
+		<input type="text" name="id" />
+		<button type="submit">Find by ID</button>
+	</form>
+	<hr>
+	<h1>----Find User By Name----</h1>
+	<form action="findByName" method="post">
+		<h3>Enter Programmer's ID to find</h3>
+		<input type="text" name="name" />
+		<button type="submit">Find by Language</button>
+	</form>
+	<hr>
+
+	<h1>----Delte USer By ID----</h1>
+	<form action="deleteById" method="Get">
+		<h3>Enter USer ID to delete</h3>
+		<input type="text" name="id" />
+		<button type="submit">delete by ID</button>
+	</form>
+	<hr>
+
+	<h1>----Update USer By ID----</h1>
+	<form action="updateUser" method="post">
+
+		<h3>Enter Programmer's Id</h3>
+		<input type="text" name="id" />
+		<h3>Enter Programmer's Name</h3>
+		<input type="text" name="name" />
+		<h3>Enter Programmer's Language</h3>
+		<input type="text" name="phone" />
+		<button type="submit">Update Programmer</button>
+	</form>
 </body>
 </html>

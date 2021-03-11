@@ -6,14 +6,13 @@
 </head>
 <body>
 
-	<h1>All Programmer Page</h1>
-	<h2 th:text="${msg}"></h2>
+	<h1>All User Page</h1>
 
 	<table>
-		<tr th:each="p: ${programmers}">
+		<tr th:each="p: ${users}">
 			<td th:text="${p.id}"></td>
 			<td th:text="${p.name}"></td>
-			<td th:text="${p.language}"></td>
+			<td th:text="${p.phone}"></td>
 		</tr>
 	</table>
 </body>
